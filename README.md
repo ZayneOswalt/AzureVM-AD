@@ -2,7 +2,7 @@
 <img src="https://jumpcloud.com/wp-content/uploads/2016/07/AD1.png" alt="osTicket logo"/>
 </p>
 
-<h1>Microsoft Active Directory -Prerequisites and Installation</h1>
+<h1>Microsoft Active Directory - Prerequisites and Installation</h1>
 This tutorial outlines the prerequisites and installation of Microsoft Active Directory.<br />
 
 <h2>Environments and Technologies Used</h2>
@@ -74,7 +74,7 @@ Locate the Private IP under the properties of "DC-1". Log in to "Client-1", open
 <h1>Back Inside the Virtual Machine of DC-1</h1>
 
 <p>
-Navigate back to the virtual machine "DC-1". Bring up the "Server manager", if not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
+Navigate back to the virtual machine "DC-1", bring up the "Server manager". If not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
 </p>
 <p>
 <img src="https://i.imgur.com/zG16QBV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -82,7 +82,7 @@ Navigate back to the virtual machine "DC-1". Bring up the "Server manager", if n
 <br />
 
 <p>
-You are not done just yet, you still have to promote "DC-1" to a Domain Controller. Click the flag with a yellow warning sign and click "Promote this server to a domain controller".
+You still have to promote "DC-1" to a Domain Controller. Click the flag with a yellow warning sign and click "Promote this server to a domain controller".
 </p>
 <p>
 <img src="https://i.imgur.com/jHJee1y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -125,7 +125,7 @@ Log out of "DC-1" and log back in with the new user with admin permission.
 <h1>Joining Client-1 to The Domain with Azure</h1>
 
 <p>
-Head back to Microsoft Azure virtual machines, click "client-1", click "Networking", then click "Client-192".
+Head back to Microsoft Azure virtual machines, click "Client-1", click "Networking", then click "Client-192".
 <p>
 <p>
 <img src="https://i.imgur.com/fDAzj4x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -141,7 +141,7 @@ Click "DNS Servers", click "Custom", and paste the Private IP of "DC-1". Save, t
 <br /> 
   
 <p>
-Log into "Client-1" as the original admin user (the one you created with the VM). Search "Settings" and open it, click "About", click "Rename this pc (advanced)". A window will pop up, click "Change...", click "domain" and enter your domain. Another window will pop up, log in with a user that has admin privileges.
+Log into "Client-1" as the original admin user (the one you created with the VM). Search "Settings" and open it, click "About", click "Rename this PC (advanced)". A window will pop up, click "Change...", click "Domain" and enter your domain. Another window will pop up, log in with a user that has admin privileges.
 </p>
 <p>
 <img src="https://i.imgur.com/kHpYsn6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -164,3 +164,7 @@ Log into "DC-1" and navigate to "Settings". Click "Remote Desktop", click "Selec
 <img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
+<p>
+Any user who is in your domain may now connect to the virtual machine.
+</p>
