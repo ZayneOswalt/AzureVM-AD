@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployment in the Cloud (Azure)</h1>
-This tutorial outlines the prerequisites and installation of Microsoft Active Directory.<br />
+This tutorial outlines the deployment and configuration of Microsoft Active Directory.<br />
 
 <h2>Environments and Technologies Used</h2>
 
