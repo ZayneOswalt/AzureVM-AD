@@ -2,24 +2,31 @@
 <img src="https://jumpcloud.com/wp-content/uploads/2016/07/AD1.png" alt="osTicket logo"/>
 </p>
 
-<h1>Microsoft Active Directory - Prerequisites and Installation</h1>
+<h1>On-premises Active Directory Deployment in the Cloud (Azure)</h1>
 This tutorial outlines the prerequisites and installation of Microsoft Active Directory.<br />
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Microsoft Active Directory
+- Microsoft Active Directory Domain Services
+- Powershell
 
 <h2>Operating Systems Used </h2>
 
+- Windows Datacenter 2022
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>Deployment and Configuration Steps</h2>
 
-- Microsoft Azure Virtual Machine (VM) under tenant
+- Setup Resources in Microsoft Azure
+- Ensure a secure connection between the DC and Client
+- Install Active Directory
+- Create organizational units in Active Directory
+- Join Client to your domain
+- Configure Remote desktop to non-administrative users
 
-<h2>Microsoft Azure Steps</h2>
+<h2>Microsoft Azure Resource Steps</h2>
 <p>
 Navigate to portal.azure.com and search for Virtual machines.
 </p>
@@ -122,7 +129,7 @@ Create a new user in "EMPLOYEES", and assign them to the "Domain Admins" group.
 Log out of "DC-1" and log back in with the new user with admin permission.
 </p>
   
-<h1>Joining Client-1 to The Domain with Azure</h1>
+<h1>Joining Client-1 to the Domain With Azure</h1>
 
 <p>
 Head back to Microsoft Azure virtual machines, click "Client-1", click "Networking", then click "Client-192".
