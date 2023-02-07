@@ -81,7 +81,7 @@ Locate the Private IP under the properties of "DC-1". Log in to "Client-1", open
 <h1>Back Inside the Virtual Machine of DC-1</h1>
 
 <p>
-Navigate back to the virtual machine "DC-1", bring up the "Server manager". If not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
+Navigate back to the virtual machine "DC-1", bring up the Server Manager. If not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
 </p>
 <p>
 <img src="https://i.imgur.com/zG16QBV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -97,7 +97,7 @@ You still have to promote "DC-1" to a Domain Controller. Click the flag with a y
 <br />
 
 <p>
-The computer will restart and disconnect. Log into the virtual machine with "< domain name >/< username >".
+The computer will restart and disconnect. Log into the virtual machine with "< domain name >/< username >" then enter the password and hit enter.
 </p>
 <br />
   
